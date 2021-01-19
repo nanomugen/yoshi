@@ -33,6 +33,7 @@ public class yoshi : MonoBehaviour
     void Update(){
         Move();
         Jump();
+        Atk();
         
     }
 
@@ -78,6 +79,12 @@ public class yoshi : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 //Debug.Log(rb.velocity.y.ToString());
             }
+        }
+    }
+
+    void Atk(){
+        if(Input.GetButtonDown("Fire1")){
+            anim.SetTrigger("ATK");
         }
     }
     
