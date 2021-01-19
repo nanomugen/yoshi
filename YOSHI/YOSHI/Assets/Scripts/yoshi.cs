@@ -118,4 +118,7 @@ public class yoshi : MonoBehaviour
         doubleJump=false;
         
     }
+    void EventExemple(){
+        Debug.Log("event on animation example(atk)");
+    }
 }
