@@ -37,6 +37,7 @@ public class yoshi : MonoBehaviour
         
     }
 
+
     void Move(){
         movement = Input.GetAxisRaw("Horizontal");
         //transform.position += movement * Time.deltaTime * Speed;
